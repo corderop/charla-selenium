@@ -1,6 +1,6 @@
 # Introducción
 
-Una vez instalado selenium y su driver correspondiente podemos empezar con el código. La primera tarea a realizar será la de obtener, a partir de un [artículo](https://es.wikipedia.org/wiki/Granada_Club_de_F%C3%BAtbol) de la Wikipedia el desempeño de cada temporada del Granada CF desde la temporada 1963-64 hasta 1980-81. 
+Una vez instalado selenium y su driver correspondiente podemos empezar con el código. La primera tarea a realizar será la de obtener, a partir de un [artículo](https://es.wikipedia.org/wiki/Granada_Club_de_F%C3%BAtbol) de la Wikipedia, todos los presidentes de la historia de Granada CF. 
 
 Partiremos del archivo `_introduccion.py` como plantilla. Inicialmente tenemos lo siguiente:
 
