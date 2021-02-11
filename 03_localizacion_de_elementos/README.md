@@ -63,5 +63,15 @@ presidentes = tabla.find_element_by_tag_name('tr');
 A partir de aquí tendremos un array en la variable `presidentes` con cada una de las filas de la tabla. Podremos así hacer un bucle recorriendo filas:
 
 ```py
+presidentes = tabla.find_elements_by_tag_name('tr')
+for p in presidentes:
+    print(p.text)
+```
 
+Esto nos imprimiría todas las filas de la tabla en cuestión. Al iterar sobre todas las filas también nos imprime la fila de títulos. Para evitar esto, podemos iterar a partir de las segunda fila:
+
+```py
+presidentes = tabla.find_elements_by_tag_name('tr')
+for i in range(1, len(presidentes)):
+    print(presidentes[i].text)
 ```
