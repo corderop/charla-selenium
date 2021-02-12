@@ -1,6 +1,6 @@
 # Iniciación al scraping con Selenium y Python
 
-Aquí están los materiales seguidos para realizar la charla de Selenium usando Python organizada por la [OSL](osl.ugr.es). 
+Aquí están los materiales seguidos para realizar la charla de Selenium usando Python organizada por la [OSL](https://osl.ugr.es). 
 
 El guión puedes encontrarlo en el archivo [GUION.md](GUION.md) al completo, o por secciones en los README.md de cada una de las carpetas.
 
