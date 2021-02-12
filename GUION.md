@@ -6,7 +6,7 @@ Para instalar _selenium_ para python debemos tener instalado [pip](https://pip.p
 pip install selenium
 ```
 
-Una vez hemos instalado selenium, tenemos que descargar un driver, según el navegador que utilizemos. En nuestro caso usaremos Firefox por lo que usaremos su [driver](https://github.com/mozilla/geckodriver/releases/), pero puedes descargar el driver para cualquier otros navegador [aquí](https://selenium-python.readthedocs.io/installation.html#drivers).
+Una vez hemos instalado selenium, tenemos que descargar un driver, según el navegador que utilicemos. En nuestro caso usaremos Firefox por lo que usaremos su [driver](https://github.com/mozilla/geckodriver/releases/), pero puedes descargar el driver para cualquier otros navegador [aquí](https://selenium-python.readthedocs.io/installation.html#drivers).
 
 Según la distribución de linux, podrás usar diferentes comandos para instalar el driver:
 
@@ -85,7 +85,7 @@ Para facilitarnos la localización de elementos haremos uso de las herramientas 
 </table>
 ```
 
-Como no podemos identificarla por un id único, tendremos que localizarla de otra forma. Podríamos hacerlo obteniendo todos los elementos de la clase `wikitable`, pero esto no sería demasiado eficiente, ya que tendríamos que ver que elemento del array corresponde a esta tabla. Tenemos dos opciones principales para detectar la tabla, utilizar su selector CSS o utilizar su xpath. Gracias a las herramientas de desarrollo de nuestro navegador, ambos pueden ser obtenidos facilmente, haciendo click derecho sobre el elementos, copiar y seleccionando _'Selector CSS'_ o _'Xpath'_:
+Como no podemos identificarla por un id único, tendremos que localizarla de otra forma. Podríamos hacerlo obteniendo todos los elementos de la clase `wikitable`, pero esto no sería demasiado eficiente, ya que tendríamos que ver que elemento del array corresponde a esta tabla. Tenemos dos opciones principales para detectar la tabla, utilizar su selector CSS o utilizar su xpath. Gracias a las herramientas de desarrollo de nuestro navegador, ambos pueden ser obtenidos fácilmente, haciendo click derecho sobre el elementos, copiar y seleccionando _'Selector CSS'_ o _'Xpath'_:
 
 ```py
 tabla = driver.find_element_by_css_selector('table.wikitable:nth-child(216)')
@@ -104,7 +104,7 @@ Analizando como está formada la tabla,
 </table>
 ```
 
-la información interesante está en las filas (`tr`). Nuetro objetivo será el de obtener la información correspondiente a cada una de las filas, donde está la información de cada presidente. Para esto podemos buscar todos los elementos `tr` que hay dentro de la tabla, para a partir de ahí iterar sobre ellos obteniendo la información:
+la información interesante está en las filas (`tr`). Nuestro objetivo será el de obtener la información correspondiente a cada una de las filas, donde está la información de cada presidente. Para esto podemos buscar todos los elementos `tr` que hay dentro de la tabla, para a partir de ahí iterar sobre ellos obteniendo la información:
 
 ```py
 presidentes = tabla.find_element_by_tag_name('tr');

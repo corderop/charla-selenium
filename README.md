@@ -16,7 +16,7 @@ El guión puedes encontrarlo en el archivo [GUION.md](GUION.md) al completo, o p
 
 3. Localización de elementos
 
-    Se mostará las diferentes formas que hay de localizar elementos y obtener los datos de estos. Se realizará la obtención automática de los presidentes históricos del Granada CF a partir de su [página de la Wikipedia](https://es.wikipedia.org/wiki/Granada_Club_de_F%C3%BAtbol#Presidentes).
+    Se mostrará las diferentes formas que hay de localizar elementos y obtener los datos de estos. Se realizará la obtención automática de los presidentes históricos del Granada CF a partir de su [página de la Wikipedia](https://es.wikipedia.org/wiki/Granada_Club_de_F%C3%BAtbol#Presidentes).
 
 4. Interacción con la página
    
