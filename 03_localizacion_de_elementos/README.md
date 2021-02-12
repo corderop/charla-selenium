@@ -1,4 +1,4 @@
-# Localización de elementos
+# Localización de elementos y obtención de los datos
 
 Los objetos se pueden localizar utilizando varios métodos:
 
@@ -74,4 +74,11 @@ Esto nos imprimiría todas las filas de la tabla en cuestión. Al iterar sobre t
 presidentes = tabla.find_elements_by_tag_name('tr')
 for i in range(1, len(presidentes)):
     print(presidentes[i].text)
+```
+
+A partir de aquí ya podemos iterar sobre todos los presidentes. Si miramos las columnas de la tabla, nos interesan las columnas segunda, tercera y cuarta. Básicamente lo que haremos será obtener todos los elementos `td` de cada fila y a partir de ahí coger los que nos interesan. Introduciremos estos datos en un archivo `.csv`, formato abierto que nos permitirá trabajar :
+
+```py
+valores = presidentes[i].find_elements_by_tag_name('td')
+string_csv += valores[1].text + ',' + valores[2].text + ',' + valores[3].text + '\n'
 ```
