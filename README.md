@@ -20,4 +20,4 @@ El guión puedes encontrarlo en el archivo [GUION.md](GUION.md) al completo, o p
 
 4. Interacción con la página
    
-   Ejemplo de aplicaciones de Selenium más orientadas a la iteración con la web que a la obtención de datos. 
+   Ejemplo de aplicaciones de Selenium más orientadas a la iteración con la web que a la obtención de datos. Introducción a las esperas y modificación de las opciones del navegador.

@@ -1,4 +1,4 @@
-# Interacción con la página
+# Interacción con la página y esperas
 
 Para introducir unos últimos conceptos, vamos a realizar un ejemplo, extrayendo información de reddit. Utilizaremos reddit ya que carga diferentes módulos de la página de forma asíncrona, en lugar de cargar un archivo HTML único, como ocurre con la wikipedia. Esto nos permitirá introducir conceptos como los `wait` y la interacción con las páginas.
 
