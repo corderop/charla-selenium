@@ -26,7 +26,7 @@ def obtener_posts(driver, tema):
         exit()
     finally:
         busqueda.send_keys(tema)
-        busqueda.send_keys(Keys.RETURN)
+        busqueda.send_keys(Keys.ENTER)
 
     # Carga de las noticias de una semana
     try:
