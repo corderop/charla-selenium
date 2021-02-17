@@ -160,7 +160,7 @@ input_busqueda.send_keys('bitcoin')
 input_busqueda.send_keys(Keys.ENTER)
 ```
 
-__Todas las teclas físicas que se pueden emular pueden verse en la [documentación oficial de selenium](https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.keys.html)__
+_Todas las teclas físicas que se pueden emular pueden verse en la [documentación oficial de selenium](https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.keys.html)_
 
 ### Opciones del navegador en la ejecución del webdriver
 
@@ -212,5 +212,5 @@ finally:
     driver.find_element_by_css_selector('._2uYY-KeuYHKiwl-9aF0UiL > a:nth-child(2) > button:nth-child(1)').click()
 ```
 
-En este trozo de código le estamos diciendo a selenium, que realice una espera hasta que se encuentre el elemento especificado, con un máximo de 10 segundos. Si este tiempo se sobrepasa, se lanza un excepción. `find_element_by_css_selector` no es el único evento con el que podemos realizar esperas, en la [documentación de selenium](https://selenium-python.readthedocs.io/waits.html#explicit-waits) se pueden encontrar todos.
+En este trozo de código le estamos diciendo a selenium, que realice una espera hasta que se encuentre el elemento especificado, con un máximo de 10 segundos. Si este tiempo se sobrepasa, se lanza un excepción. `presence_of_element_located` no es el único evento con el que podemos realizar esperas, en la [documentación de selenium](https://selenium-python.readthedocs.io/waits.html#explicit-waits) se pueden encontrar todos.
 
