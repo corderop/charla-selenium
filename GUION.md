@@ -6,7 +6,7 @@ Para instalar _selenium_ para python debemos tener instalado [pip](https://pip.p
 pip install selenium
 ```
 
-Una vez hemos instalado selenium, tenemos que descargar un driver, según el navegador que utilicemos. En nuestro caso usaremos Firefox por lo que usaremos su [driver](https://github.com/mozilla/geckodriver/releases/), pero puedes descargar el driver para cualquier otros navegador [aquí](https://selenium-python.readthedocs.io/installation.html#drivers).
+Una vez hemos instalado selenium, tenemos que descargar el driver correspondiente al navegador que utilicemos. En nuestro caso usaremos el de [Firefox](https://github.com/mozilla/geckodriver/releases/), pero puedes descargar el driver para cualquier otro navegador [aquí](https://selenium-python.readthedocs.io/installation.html#drivers).
 
 Según la distribución de linux, podrás usar diferentes comandos para instalar el driver:
 
@@ -107,7 +107,7 @@ Analizando como está formada la tabla,
 la información interesante está en las filas (`tr`). Nuestro objetivo será el de obtener la información correspondiente a cada una de las filas, donde está la información de cada presidente. Para esto podemos buscar todos los elementos `tr` que hay dentro de la tabla, para a partir de ahí iterar sobre ellos obteniendo la información:
 
 ```py
-presidentes = tabla.find_element_by_tag_name('tr');
+presidentes = tabla.find_elements_by_tag_name('tr');
 ```
 
 A partir de aquí tendremos un array en la variable `presidentes` con cada una de las filas de la tabla. Podremos así hacer un bucle recorriendo filas:
